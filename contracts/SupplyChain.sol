@@ -54,6 +54,7 @@ contract SupplyChain {
     event LogShipped(uint sku);
     event LogReceived(uint sku);
 
+
 /* Create a modifer that checks if the msg.sender is the owner of the contract */
    modifier isOwner () {
         require(msg.sender == owner);
